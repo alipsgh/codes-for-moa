@@ -1,5 +1,5 @@
 
-package moa.classifiers.core.driftdetection.fhddm;
+package moa.classifiers.core.driftdetection;
 
 import moa.classifiers.core.driftdetection.AbstractChangeDetector;
 import moa.core.ObjectRepository;
