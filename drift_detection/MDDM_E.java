@@ -70,7 +70,7 @@ public class MDDM_E extends AbstractChangeDetector {
         }
         
         if (pointer == win.length){
-            double u = cal_mean();
+            double u = cal_w_mean();
             u_max = (u_max < u) ? u : u_max;
             drift_status = (u_max - u > epsilon) ? true : false;
         }
@@ -94,7 +94,7 @@ public class MDDM_E extends AbstractChangeDetector {
         return bound_sum;
     }
 
-    private double cal_mean() {
+    private double cal_w_mean() {
         double total_sum = 0, win_sum = 0, r = 1, ratio = Math.pow(Math.E, lambda);
         for (int i = 0; i < win.length; i++){
              total_sum += r;
