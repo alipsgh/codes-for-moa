@@ -12,7 +12,7 @@ import moa.tasks.TaskMonitor;
  *  <p>A. Pesaranghader, H.L. Viktor, Fast Hoeffding Drift Detection Method for Evolving Data Streams.
  *  In the Proceedings of ECML-PKDD 2016.</p>
  *  
- *  @author Ali Pesaranghader (alipsgh@gmail.com)
+ *  @author Ali Pesaranghader (apesaran@uottawa.ca, alipsgh@gmail.com)
  *  @version $Revision: 7 $
  */
 public class FHDDM extends AbstractChangeDetector {

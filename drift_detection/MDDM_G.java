@@ -11,7 +11,7 @@ import moa.tasks.TaskMonitor;
  * <p> McDiarmid Drift Detection Method - Geometric Scheme (MDDM_G) </p>
  * <p> A. Pesaranghader, H.L. Viktor, Eric Paquet, McDiarmid Drift Detection Methods for Evolving Data Streams. </p>
  *  
- * @author Ali Pesaranghader (alipsgh@gmail.com)
+ * @author Ali Pesaranghader (apesaran@uottawa.ca, alipsgh@gmail.com)
  * @version $Revision: 7 $
  */
 public class MDDM_G extends AbstractChangeDetector {
