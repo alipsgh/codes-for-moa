@@ -25,7 +25,6 @@ public class FHDDM extends AbstractChangeDetector {
     private int[] win;
     private int pointer;
     
-    public static double delta;
     public static double epsilon;
 
     private int n_one;
@@ -39,8 +38,7 @@ public class FHDDM extends AbstractChangeDetector {
     public void resetLearning() {
         win = new int[slidingWinSizeOption.getValue()];
         pointer = 0;
-        delta = confidenceOption.getValue();
-        epsilon = Math.sqrt((Math.log(1 / delta)) / (2 * win.length));
+        epsilon = Math.sqrt((Math.log(1 / confidenceOption.getValue())) / (2 * win.length));
         u_max = 0;
         n_one = 0;
     }
@@ -75,6 +73,7 @@ public class FHDDM extends AbstractChangeDetector {
         if (pointer == win.length){
             double u = ((double) n_one) / win.length;
             u_max = (u_max < u) ? u : u_max;
+            // drift test
             drift_status = (u_max - u > epsilon) ? true : false;
         }
         
