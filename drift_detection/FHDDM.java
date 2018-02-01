@@ -1,7 +1,6 @@
 
 package moa.classifiers.core.driftdetection;
 
-import moa.classifiers.core.driftdetection.AbstractChangeDetector;
 import moa.core.ObjectRepository;
 import moa.options.FloatOption;
 import moa.options.IntOption;
