@@ -77,31 +77,34 @@ public class FHDDMS_add extends AbstractChangeDetector {
             if (first_round)
                 first_round = false;
         }
-               
+        
+        int index = (first_round == true) ? (int)((double) counter / w_s) : stack.length - 1;
         if (prediction == 0){
-            int index = (first_round == true) ? (int)((double) counter / w_s) : stack.length - 1;
             stack[index] += 1;
             n_1 += 1;
         }
         
         counter += 1;
+        
+        boolean drift_status_s = false;
+        boolean drift_status_l = false;
+        
+        if (counter % w_s == 0){
+            // testing the short window
+            double u_s = ((double) stack[index]) / w_s;
+            u_s_max = (u_s_max < u_s) ? u_s : u_s_max;
+            drift_status_s = (u_s_max - u_s > epsilon_s) ? true : false;
+        }
               
         if (counter == w_l){
-            
-            // testing the short window
-            double u_s = ((double) stack[stack.length - 1]) / w_s;
-            u_s_max = (u_s_max < u_s) ? u_s : u_s_max;
-            boolean drift_status_s = (u_s_max - u_s > epsilon_s) ? true : false;
-            
             // testing the long window
             double u_l = ((double) n_1) / w_l;
             u_l_max = (u_l_max < u_l) ? u_l : u_l_max;
-            boolean drift_status_l = (u_l_max - u_l > epsilon_l) ? true : false;
-            
-            // concluding drift status
-            drift_status = (drift_status_s || drift_status_l);
-            
+            drift_status_l = (u_l_max - u_l > epsilon_l) ? true : false;
         }
+        
+        // concluding drift status
+        drift_status = (drift_status_s || drift_status_l);
         
         this.isWarningZone = warning_status;
         this.isChangeDetected = drift_status;
