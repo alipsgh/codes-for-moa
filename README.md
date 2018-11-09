@@ -12,7 +12,7 @@ Pre-print available at: https://arxiv.org/abs/1709.02457, DOI: https://doi.org/1
 3. Pesaranghader, Ali, and Herna L. Viktor. "__Fast Hoeffding Drift Detection Method for Evolving Data Streams__", *European Conference on Machine Learning*, 2016. <br />
 Pre-print available at: http://iwera.ir/~ali/papers/ecml2016.pdf, DOI: https://doi.org/10.1007/978-3-319-46227-1_7
 4. Pesaranghader, Ali, Herna Viktor, and Eric Paquet. "__McDiarmid Drift Detection Methods for Evolving Data Streams__", *International Joint Conference on Neural Networks*, 2018. <br />
-Pre-print available at: https://arxiv.org/abs/1710.02030
+Pre-print available at: https://arxiv.org/abs/1710.02030, DOI: https://doi.org/10.1109/IJCNN.2018.8489260
 
 <br/>
 <br/>
