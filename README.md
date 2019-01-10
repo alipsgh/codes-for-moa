@@ -17,4 +17,4 @@ Pre-print available at: https://arxiv.org/abs/1710.02030, DOI: https://doi.org/1
 <br/>
 <br/>
 
-<sub>Ali Pesaranghader © 2018<br />Under MIT License</sub>
+<sub>Ali Pesaranghader © 2019<br />Under MIT License</sub>
