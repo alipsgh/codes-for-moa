@@ -1,6 +1,8 @@
 # My Java Codes for MOA
 You find my codes, written in Java, for the MOA framework in this repository. My drift detectors may be used with the MOA framework for detecting concept drift in envolving data streams.
 
+[Tutorial on Setting Up Everything](https://github.com/alipsgh/codes_for_moa/blob/master/tutorial.md).
+
 ### Citation
 
 Please cite the following papers, or thesis, if you plan to use FHDDM, FHDDMS, and MDDMs:
