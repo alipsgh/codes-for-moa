@@ -3,11 +3,16 @@
 ### 1. Set up MOA
 
 First of all, we must download and then install a Java IDE such as [Eclipse](https://www.eclipse.org/downloads/), [NetBeans](https://netbeans.org/) and [IntelliJ IDEA](https://www.jetbrains.com/idea/download/). I use Eclipse for the purpose of this tutorial.
-Once the IDE of choice is set up, we have to download the MOA framework from its [GitHub Repository](https://github.com/Waikato/moa), then import it into your IDE as a Maven project. For that click on `File >> Import... >> Maven >> Existing Maven Project`
+Once the IDE of choice is set up, we have to download the MOA framework from its [GitHub Repository](https://github.com/Waikato/moa), then import it into your IDE as a Maven project. For that click on `File >> Import... >> Maven >> Existing Maven Project`. Then click `Next` and `Browse...` MOA's the unzipped folder.
 
 <p align="center">
-<img src="/img/01_maven.png" width="50%" />
+  <img src="/img/01_maven_1.png" width="30%" />
+  
+  <img src="/img/02_maven_2.png" width="30%" />
 </p>
+
+
+
 
 ### 2. Add DDMs
 
